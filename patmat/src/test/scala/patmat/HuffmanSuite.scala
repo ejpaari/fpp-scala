@@ -51,4 +51,7 @@ class HuffmanSuite extends FunSuite {
     }
   }
 
+  test("create code tree") {
+    assert(createCodeTree("ab".toList).toString === "Fork(Leaf(a,1),Leaf(b,1),List(a, b),2)")
+  }
 }
